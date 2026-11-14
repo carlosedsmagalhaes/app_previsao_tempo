@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- O Android bloqueia HTTP (sem S) por padrão. Este arquivo libera HTTP
+     somente para o servidor do CPTEC/INPE, usado se o HTTPS falhar. -->
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="false">servicos.cptec.inpe.br</domain>
+    </domain-config>
+</network-security-config>
